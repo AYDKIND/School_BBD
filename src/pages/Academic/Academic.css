@@ -1,0 +1,238 @@
+/* Academic Hero Section */
+.academic-hero {
+  background-color: #1a237e;
+  color: white;
+  padding: 60px 0;
+  text-align: center;
+}
+
+.academic-hero h1 {
+  font-size: 42px;
+  margin-bottom: 15px;
+}
+
+.academic-hero p {
+  font-size: 18px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Academic Content Section */
+.academic-content {
+  padding: 60px 0;
+}
+
+/* Tabs */
+.academic-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 40px;
+}
+
+.academic-tabs button {
+  background-color: #f5f5f5;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.3s ease;
+}
+
+.academic-tabs button:hover {
+  background-color: #e0e0e0;
+}
+
+.academic-tabs button.active {
+  background-color: #1a237e;
+  color: white;
+}
+
+/* Tab Content */
+.academic-tab-content {
+  background-color: white;
+  border-radius: 8px;
+  padding: 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.academic-tab-content h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+  color: #1a237e;
+}
+
+.academic-tab-content > div > p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+/* Sessions */
+.sessions-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.session-card {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.session-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.session-header h3 {
+  font-size: 22px;
+  color: #1a237e;
+}
+
+.session-dates {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #555;
+}
+
+.session-highlights h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.session-highlights ul {
+  padding-left: 20px;
+}
+
+.session-highlights li {
+  margin-bottom: 8px;
+  color: #555;
+}
+
+/* Departments */
+.departments-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.department-card {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.department-card h3 {
+  font-size: 20px;
+  color: #1a237e;
+  margin-bottom: 10px;
+}
+
+.department-head {
+  margin-bottom: 15px;
+  color: #555;
+}
+
+.department-subjects h4 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.department-subjects ul {
+  padding-left: 20px;
+}
+
+.department-subjects li {
+  margin-bottom: 5px;
+  color: #555;
+}
+
+/* Documents */
+.documents-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.document-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 15px 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.document-info h3 {
+  font-size: 18px;
+  color: #1a237e;
+  margin-bottom: 5px;
+}
+
+.document-info p {
+  font-size: 14px;
+  color: #777;
+  margin: 0;
+}
+
+.download-btn {
+  background-color: #1a237e;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+  font-size: 14px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.download-btn:hover {
+  background-color: #0d1757;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .academic-tabs {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .session-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  
+  .departments-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .document-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+  
+  .download-btn {
+    align-self: flex-start;
+  }
+}
