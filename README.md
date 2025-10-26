@@ -79,3 +79,4 @@ The frontend is complete and ready for backend API integration. Key integration 
 ---
 
 **© 2024 Baba Basudev Academy. All Rights Reserved.**
+# Deployed successfully
