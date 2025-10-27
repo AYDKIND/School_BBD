@@ -1,6 +1,6 @@
-# 🏫 Baba Basudev Academy - Official Website
+# 🏫 BBD Academy - Official Website
 
-A modern, responsive website for Baba Basudev Academy built with React and Vite.
+A modern, responsive website for BBD Academy built with React and Vite.
 
 ## ✨ Features
 
@@ -78,5 +78,5 @@ The frontend is complete and ready for backend API integration. Key integration 
 
 ---
 
-**© 2024 Baba Basudev Academy. All Rights Reserved.**
+**© 2024 BBD Academy. All Rights Reserved.**
 # Deployed successfully

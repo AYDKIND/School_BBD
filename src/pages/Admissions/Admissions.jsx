@@ -210,7 +210,7 @@ const Admissions = () => {
     const doc = new jsPDF();
 
     doc.setFontSize(18);
-    doc.text('Baba Basudev Academy - Admission Form', 20, 20);
+    doc.text('BBD Academy - Admission Form', 20, 20);
 
     doc.setFontSize(12);
     doc.text('Instructions:', 20, 35);
@@ -249,7 +249,7 @@ const Admissions = () => {
           <div className="admissions-grid">
             <div className="admissions-info">
               <h2>Admission Process</h2>
-              <p>Baba Basudev Academy welcomes applications from students who are eager to learn and grow in a nurturing environment. Our admission process is designed to be straightforward and student-friendly.</p>
+              <p>BBD Academy welcomes applications from students who are eager to learn and grow in a nurturing environment. Our admission process is designed to be straightforward and student-friendly.</p>
               
               <div className="admission-steps">
                 <div className="step">
@@ -309,7 +309,7 @@ const Admissions = () => {
                     <FaCheck />
                   </div>
                   <h2>Application Submitted!</h2>
-                  <p>Thank you for applying to Baba Basudev Academy. We have received your application and will contact you shortly.</p>
+                  <p>Thank you for applying to BBD Academy. We have received your application and will contact you shortly.</p>
                   <p>Application Reference: <strong>APP-{Math.floor(Math.random() * 10000)}</strong></p>
                   <button className="btn-primary" onClick={() => {
                     setFormSubmitted(false);

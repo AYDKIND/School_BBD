@@ -53,10 +53,10 @@ const Navbar = () => {
             <a href="mailto:info@bbdacademy.edu.in"><FaEnvelope /> sunil.bbdacademy@gmail.com</a>
           </div>
           <div className="social-icons">
-            <a href="#" aria-label="Facebook"><FaFacebookF /></a>
-            <a href="#" aria-label="Twitter"><FaTwitter /></a>
-            <a href="#" aria-label="Instagram"><FaInstagram /></a>
-            <a href="#" aria-label="LinkedIn"><FaLinkedinIn /></a>
+            <a href="https://www.facebook.com/profile.php?id=61560794331178" aria-label="Facebook"><FaFacebookF /></a>
+            <a href="https://x.com/BBD_School91532" aria-label="Twitter"><FaTwitter /></a>
+            <a href="https://www.instagram.com/endless.sunil4u/" aria-label="Instagram"><FaInstagram /></a>
+            <a href="https://www.linkedin.com/in/sunil-yadav-b08735390/" aria-label="LinkedIn"><FaLinkedinIn /></a>
           </div>
         </div>
       </div>

@@ -1,6 +1,8 @@
 import { Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar/Navbar';
 import Footer from './components/Footer/Footer';
+import ScrollToTop from './components/ScrollToTop/ScrollToTop';
+import BackToTop from './components/BackToTop/BackToTop';
 import Home from './pages/Home/Home';
 import About from './pages/About/About';
 import Contact from './pages/Contact/Contact';
@@ -45,11 +47,14 @@ import './App.css';
 
 
 
+
 function App() {
   return (
     <div className="app">
+      <ScrollToTop />
       <Navbar />
-      <Routes>
+      <div>
+        <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/academic" element={<Academic />} />
@@ -83,8 +88,10 @@ function App() {
         <Route path="/student/attendance" element={<StudentAttendance />} />
         <Route path="/student/online-classes" element={<OnlineClasses />} />
         <Route path="/student/profile" element={<StudentProfile />} />
-      </Routes>
+        </Routes>
+      </div>
       <Footer />
+      <BackToTop />
     </div>
   );
 }
