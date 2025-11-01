@@ -28,15 +28,20 @@ import FacultyAttendance from './pages/Faculty/FacultyAttendance';
 import FacultyGrades from './pages/Faculty/FacultyGrades';
 import FacultyCourses from './pages/Faculty/FacultyCourses';
 import FacultyProfile from './pages/Faculty/FacultyProfile';
+import FacultyOnlineClasses from './pages/Faculty/OnlineClasses';
 
 // Admin Pages (additional)
 import ManageFaculty from './pages/Admin/ManageFaculty';
 import ManageCourses from './pages/Admin/ManageCourses';
 import AdminSettings from './pages/Admin/AdminSettings';
+import AdmissionsManagement from './pages/Admin/AdmissionsManagement';
+import FeeManagement from './pages/Admin/FeeManagement';
+import Reports from './pages/Admin/Reports';
 
 // Student Pages (additional)
 import StudentAssignments from './pages/Student/StudentAssignments';
 import StudentProfile from './pages/Student/StudentProfile';
+import StudentFeePayment from './pages/Student/FeePayment';
 
 // Login Pages
 import AdminLogin from './pages/Admin/AdminLogin';
@@ -72,12 +77,16 @@ function App() {
         <Route path="/admin/manage-faculty" element={<ManageFaculty />} />
         <Route path="/admin/manage-courses" element={<ManageCourses />} />
         <Route path="/admin/settings" element={<AdminSettings />} />
+        <Route path="/admin/admissions" element={<AdmissionsManagement />} />
+        <Route path="/admin/fee-management" element={<FeeManagement />} />
+        <Route path="/admin/reports" element={<Reports />} />
         
         {/* Faculty Routes */}
         <Route path="/faculty/dashboard" element={<FacultyDashboard />} />
         <Route path="/faculty/attendance" element={<FacultyAttendance />} />
         <Route path="/faculty/grades" element={<FacultyGrades />} />
         <Route path="/faculty/courses" element={<FacultyCourses />} />
+        <Route path="/faculty/online-classes" element={<FacultyOnlineClasses />} />
         <Route path="/faculty/profile" element={<FacultyProfile />} />
         
         {/* Student Routes */}
@@ -87,6 +96,7 @@ function App() {
         <Route path="/student/assignments" element={<StudentAssignments />} />
         <Route path="/student/attendance" element={<StudentAttendance />} />
         <Route path="/student/online-classes" element={<OnlineClasses />} />
+        <Route path="/student/fee-payment" element={<StudentFeePayment />} />
         <Route path="/student/profile" element={<StudentProfile />} />
         </Routes>
       </div>

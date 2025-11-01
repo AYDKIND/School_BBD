@@ -1,5 +1,6 @@
 import React from 'react';
-import { FaClipboardList, FaUsers, FaChalkboardTeacher } from 'react-icons/fa';
+import { FaClipboardList, FaUsers, FaChalkboardTeacher, FaVideo } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 export default function FacultyDashboard() {
   const stats = [
@@ -43,6 +44,53 @@ export default function FacultyDashboard() {
               <span style={{ color: '#888' }}>{item.room}</span>
             </div>
           ))}
+        </div>
+      </div>
+
+      {/* Quick Actions */}
+      <div style={{ marginTop: '30px' }}>
+        <h2 style={{ marginBottom: '20px', fontSize: '1.2rem' }}>Quick Actions</h2>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '20px' }}>
+          <Link to="/faculty/online-classes" style={{ textDecoration: 'none' }}>
+            <div style={{ 
+              background: 'white', 
+              borderRadius: '8px', 
+              padding: '20px', 
+              boxShadow: '0 2px 8px rgba(0,0,0,0.06)', 
+              display: 'flex', 
+              alignItems: 'center', 
+              gap: '15px',
+              cursor: 'pointer',
+              transition: 'transform 0.2s',
+              border: '2px solid transparent'
+            }}
+            onMouseEnter={(e) => {
+              e.target.style.transform = 'translateY(-2px)';
+              e.target.style.borderColor = '#1a237e';
+            }}
+            onMouseLeave={(e) => {
+              e.target.style.transform = 'translateY(0)';
+              e.target.style.borderColor = 'transparent';
+            }}>
+              <div style={{ 
+                width: 50, 
+                height: 50, 
+                borderRadius: '50%', 
+                background: '#4caf50', 
+                color: 'white', 
+                display: 'flex', 
+                alignItems: 'center', 
+                justifyContent: 'center', 
+                fontSize: '1.3rem' 
+              }}>
+                <FaVideo />
+              </div>
+              <div>
+                <h3 style={{ margin: 0, color: '#1a237e' }}>Online Classes</h3>
+                <p style={{ margin: 0, color: '#666', fontSize: '0.9rem' }}>Create & manage virtual classes</p>
+              </div>
+            </div>
+          </Link>
         </div>
       </div>
     </div>

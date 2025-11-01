@@ -1,5 +1,6 @@
 import React from 'react';
-import { FaUsers, FaChalkboardTeacher, FaBook, FaRupeeSign, FaBell } from 'react-icons/fa';
+import { FaUsers, FaChalkboardTeacher, FaBook, FaRupeeSign, FaBell, FaUserPlus, FaChartBar, FaCreditCard } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 export default function AdminDashboard() {
   // Sample data for dashboard
@@ -154,6 +155,115 @@ export default function AdminDashboard() {
           }}>
             Complete Tasks
           </button>
+        </div>
+      </div>
+
+      {/* Quick Actions */}
+      <div style={{
+        background: 'white',
+        borderRadius: '8px',
+        padding: '20px',
+        boxShadow: '0 2px 10px rgba(0,0,0,0.08)',
+        marginTop: '30px'
+      }}>
+        <h2 style={{ margin: '0 0 20px 0', fontSize: '1.2rem' }}>Quick Actions</h2>
+        <div style={{ 
+          display: 'grid', 
+          gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', 
+          gap: '15px'
+        }}>
+          <Link to="/admin/admissions" style={{ textDecoration: 'none' }}>
+            <div style={{
+              background: '#f8f9fa',
+              borderRadius: '6px',
+              padding: '15px',
+              display: 'flex',
+              alignItems: 'center',
+              gap: '12px',
+              cursor: 'pointer',
+              transition: 'background 0.2s',
+              border: '1px solid #e9ecef'
+            }}>
+              <div style={{ 
+                width: '40px', 
+                height: '40px', 
+                borderRadius: '50%', 
+                background: '#4285F4',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                color: 'white'
+              }}>
+                <FaUserPlus />
+              </div>
+              <div>
+                <h4 style={{ margin: '0', color: '#333', fontSize: '0.9rem' }}>Admissions</h4>
+                <p style={{ margin: '0', color: '#666', fontSize: '0.8rem' }}>Manage applications</p>
+              </div>
+            </div>
+          </Link>
+
+          <Link to="/admin/fee-management" style={{ textDecoration: 'none' }}>
+            <div style={{
+              background: '#f8f9fa',
+              borderRadius: '6px',
+              padding: '15px',
+              display: 'flex',
+              alignItems: 'center',
+              gap: '12px',
+              cursor: 'pointer',
+              transition: 'background 0.2s',
+              border: '1px solid #e9ecef'
+            }}>
+              <div style={{ 
+                width: '40px', 
+                height: '40px', 
+                borderRadius: '50%', 
+                background: '#34A853',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                color: 'white'
+              }}>
+                <FaCreditCard />
+              </div>
+              <div>
+                <h4 style={{ margin: '0', color: '#333', fontSize: '0.9rem' }}>Fee Management</h4>
+                <p style={{ margin: '0', color: '#666', fontSize: '0.8rem' }}>Track payments</p>
+              </div>
+            </div>
+          </Link>
+
+          <Link to="/admin/reports" style={{ textDecoration: 'none' }}>
+            <div style={{
+              background: '#f8f9fa',
+              borderRadius: '6px',
+              padding: '15px',
+              display: 'flex',
+              alignItems: 'center',
+              gap: '12px',
+              cursor: 'pointer',
+              transition: 'background 0.2s',
+              border: '1px solid #e9ecef'
+            }}>
+              <div style={{ 
+                width: '40px', 
+                height: '40px', 
+                borderRadius: '50%', 
+                background: '#EA4335',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                color: 'white'
+              }}>
+                <FaChartBar />
+              </div>
+              <div>
+                <h4 style={{ margin: '0', color: '#333', fontSize: '0.9rem' }}>Reports</h4>
+                <p style={{ margin: '0', color: '#666', fontSize: '0.8rem' }}>Analytics & insights</p>
+              </div>
+            </div>
+          </Link>
         </div>
       </div>
     </div>

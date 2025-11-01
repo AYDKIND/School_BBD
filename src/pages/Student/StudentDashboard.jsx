@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaCalendarAlt, FaBook, FaGraduationCap, FaChalkboard } from 'react-icons/fa';
+import { FaCalendarAlt, FaBook, FaGraduationCap, FaChalkboard, FaFileAlt, FaCreditCard } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
 export default function StudentDashboard() {
@@ -244,6 +244,146 @@ export default function StudentDashboard() {
             View All Assignments
           </button>
         </Link>
+      </div>
+
+      {/* Enhanced Quick Actions */}
+      <div style={{
+        background: 'white',
+        borderRadius: '8px',
+        padding: '20px',
+        boxShadow: '0 2px 10px rgba(0,0,0,0.08)',
+        marginTop: '30px'
+      }}>
+        <h2 style={{ margin: '0 0 20px 0', fontSize: '1.2rem' }}>Quick Actions</h2>
+        <div style={{ 
+          display: 'grid', 
+          gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', 
+          gap: '15px'
+        }}>
+          <Link to="/student/assignments" style={{ textDecoration: 'none' }}>
+            <div style={{
+              background: '#f8f9fa',
+              borderRadius: '6px',
+              padding: '15px',
+              display: 'flex',
+              alignItems: 'center',
+              gap: '12px',
+              cursor: 'pointer',
+              transition: 'background 0.2s',
+              border: '1px solid #e9ecef'
+            }}>
+              <div style={{ 
+                width: '40px', 
+                height: '40px', 
+                borderRadius: '50%', 
+                background: '#4285F4',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                color: 'white'
+              }}>
+                <FaFileAlt />
+              </div>
+              <div>
+                <h4 style={{ margin: '0', color: '#333', fontSize: '0.9rem' }}>Assignments</h4>
+                <p style={{ margin: '0', color: '#666', fontSize: '0.8rem' }}>Submit & track</p>
+              </div>
+            </div>
+          </Link>
+
+          <Link to="/student/fee-payment" style={{ textDecoration: 'none' }}>
+            <div style={{
+              background: '#f8f9fa',
+              borderRadius: '6px',
+              padding: '15px',
+              display: 'flex',
+              alignItems: 'center',
+              gap: '12px',
+              cursor: 'pointer',
+              transition: 'background 0.2s',
+              border: '1px solid #e9ecef'
+            }}>
+              <div style={{ 
+                width: '40px', 
+                height: '40px', 
+                borderRadius: '50%', 
+                background: '#34A853',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                color: 'white'
+              }}>
+                <FaCreditCard />
+              </div>
+              <div>
+                <h4 style={{ margin: '0', color: '#333', fontSize: '0.9rem' }}>Fee Payment</h4>
+                <p style={{ margin: '0', color: '#666', fontSize: '0.8rem' }}>Pay fees online</p>
+              </div>
+            </div>
+          </Link>
+
+          <Link to="/student/online-classes" style={{ textDecoration: 'none' }}>
+            <div style={{
+              background: '#f8f9fa',
+              borderRadius: '6px',
+              padding: '15px',
+              display: 'flex',
+              alignItems: 'center',
+              gap: '12px',
+              cursor: 'pointer',
+              transition: 'background 0.2s',
+              border: '1px solid #e9ecef'
+            }}>
+              <div style={{ 
+                width: '40px', 
+                height: '40px', 
+                borderRadius: '50%', 
+                background: '#EA4335',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                color: 'white'
+              }}>
+                <FaChalkboard />
+              </div>
+              <div>
+                <h4 style={{ margin: '0', color: '#333', fontSize: '0.9rem' }}>Online Classes</h4>
+                <p style={{ margin: '0', color: '#666', fontSize: '0.8rem' }}>Join live sessions</p>
+              </div>
+            </div>
+          </Link>
+
+          <Link to="/student/grades" style={{ textDecoration: 'none' }}>
+            <div style={{
+              background: '#f8f9fa',
+              borderRadius: '6px',
+              padding: '15px',
+              display: 'flex',
+              alignItems: 'center',
+              gap: '12px',
+              cursor: 'pointer',
+              transition: 'background 0.2s',
+              border: '1px solid #e9ecef'
+            }}>
+              <div style={{ 
+                width: '40px', 
+                height: '40px', 
+                borderRadius: '50%', 
+                background: '#FBBC04',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                color: 'white'
+              }}>
+                <FaGraduationCap />
+              </div>
+              <div>
+                <h4 style={{ margin: '0', color: '#333', fontSize: '0.9rem' }}>Grades</h4>
+                <p style={{ margin: '0', color: '#666', fontSize: '0.8rem' }}>View results</p>
+              </div>
+            </div>
+          </Link>
+        </div>
       </div>
     </div>
   );
